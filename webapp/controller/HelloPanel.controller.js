@@ -15,25 +15,7 @@ sap.ui.define([
             MessageToast.show(sMsg); //Muestra el mensaje en la parte de abajo y de una forma más linda
         },
         onOpenDialog : function() {
-            var oView = this.getView();
-            //Crear un diálogo:
-            if(!this.byId("helloDialog")){
-                //Cargar asincronicamente fragmento XML
-                Fragment.load({
-                    id: oView.getId(),
-                    name: "sap.ui.demo.walkthrough.view.HelloDialog",
-                    controller: this
-                }).then(function(oDialog){
-                    //Conectar el diálogo a la vista raíz de este componente
-                    oView.addDependent(oDialog);
-                    oDialog.open();
-                })
-            }else{
-                this.byId("helloDialog").open();
-            }
-        },
-        onCloseDialog : function() {
-            this.byId("helloDialog").close();
+            this.getOwnerComponent().openHelloDialog();
         }
     })    
-})
+});
