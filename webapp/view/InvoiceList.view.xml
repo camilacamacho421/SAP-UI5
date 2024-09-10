@@ -18,7 +18,7 @@ xmlns:mvc="sap.ui.core.mvc">
                     }
                 }"
                 numberUnit="{view>/currency}"
-                numberState="{= ${inoice>ExtendedPrice} > 50 ? 'Error' : 'Success'}"/> <!--Deja de color verde o rojo dependiendo si es menor o mayor a 50-->
+                numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success'}"/> <!--Deja de color verde o rojo dependiendo si es menor o mayor a 50-->
         </items>
     </List>
 </mvc:View>
