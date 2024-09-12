@@ -19,7 +19,9 @@ sap.ui.define([
             var oModel = new JSONModel(oData);
             this.setModel(oModel);
 
-            this._helloDialog = new HelloDialog(this.getRootControl());            
+            this._helloDialog = new HelloDialog(this.getRootControl());          
+            
+            this.getRouter().initialize();
         },
 
         exit: function() {
