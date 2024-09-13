@@ -3,6 +3,6 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true">
     <Shell> <!--Hace que todo lo de adentro quede como en un contenedor. Pone bordes a los costados de la página-->
-        <App class="myAppDemoWT"/>
+        <App class="myAppDemoWT" id="app"/>
     </Shell>
 </mvc:View>
