@@ -34,7 +34,7 @@
                     }
                 }"/>
             </attributes>
-        </ObjectHeader>
+            </ObjectHeader>
         <wt:ProductRating id="rating" class="sapUiSmallMarginBeginEnd" change=".onRatingChange"/>
     </Page>
 </mvc:View>
