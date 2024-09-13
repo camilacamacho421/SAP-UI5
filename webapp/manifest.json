@@ -142,8 +142,8 @@
 			"extensions": {}
         },
         "contentDensities": {
-            "compact": false,
-            "cozy": false
+            "compact": true,
+            "cozy": true
         }
     },
 
